@@ -1,5 +1,5 @@
-const removeFromArray = function(arr, item) {
-    const removed = arr.filter((element) => element !== item);
+const removeFromArray = function(arr, ...items) {
+    const removed = arr.filter((element) => element != items);
     return removed;
 };
 //console.table(removeFromArray([1, 2, 3, 4, 5], 3));
